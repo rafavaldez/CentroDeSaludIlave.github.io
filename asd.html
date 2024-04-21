@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF.js Express Viewer</title>
+    <!-- Importa PDF.js Express Viewer como una etiqueta de script desde la carpeta lib utilizando una ruta relativa -->
+    <script src='/lib/webviewer.min.js'></script>
+</head>
+<body>
+    <div id='viewer' style="width: 1024px; height: 600px; margin: 0 auto;"></div>
+    <script>
+        WebViewer({
+            path: '/lib', // Ruta a la carpeta 'lib' de PDF.js Express en tu servidor
+            licenseKey: 'localhost',
+            initialDoc: '/pdf/PLANO CATASTRAL ILAVE EL COLLAO - PUNO-Model.pdf',
+            // initialDoc: '/path/to/my/file.pdf',  // También puedes usar documentos en tu servidor
+        }, document.getElementById('viewer'))
+        .then(instance => {
+            // Ahora puedes acceder a las API a través de la instancia de WebViewer
+            const { Core, UI } = instance;
+
+            // Agrega un event listener para cuando un documento se ha cargado
+            Core.documentViewer.addEventListener('documentLoaded', () => {
+                console.log('Documento cargado');
+            });
+
+            // Agrega un event listener para cuando el número de página ha cambiado
+            Core.documentViewer.addEventListener('pageNumberUpdated', (pageNumber) => {
+                console.log(`El número de página es: ${pageNumber}`);
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
