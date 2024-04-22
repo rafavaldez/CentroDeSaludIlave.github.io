@@ -114,7 +114,12 @@
 	<div class="container">
 		<div class="row">
 			<div style="position:relative;padding-top:0;width:100%;height:800px;"><iframe style="position:absolute;border:none;width:100%;height:100%;left:0;top:0;" src="https://online.fliphtml5.com/jeqnj/rtbz/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div>
-<iframe src="https://drive.google.com/file/d/1FRI0Dwh0Iv_Fug-QakhA6AhijWMZPXOp/preview" width="100%" height="800px" allow="autoplay"></iframe>
+			<div style="position:relative;padding-top:max(60%,324px);width:100%;height:800px;"><iframe style="position:absolute;border:none;width:100%;height:100%;left:0;top:0;" src="https://online.fliphtml5.com/jeqnj/fwjm/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div>
+
+			<iframe src="https://drive.google.com/file/d/1-2mY9QwWLq7OGQb3QK9PkXGiQUOB47AL/preview" width="100%" height="800px" allow="autoplay"></iframe>
+			<iframe src="https://drive.google.com/file/d/1FRI0Dwh0Iv_Fug-QakhA6AhijWMZPXOp/preview" width="100%" height="800px" allow="autoplay"></iframe>
+			<iframe src="https://drive.google.com/file/d/1FEiBFPMmuOceDpCn_AwwsUH4DwghJ4rx/preview" width="100%" height="800px" allow="autoplay"></iframe>
+			
 	
 
 			<div class="col-md-12 col-sm-12 wow bounceIn">
@@ -137,7 +142,19 @@
 
             <h3>Mapa Catastral por Calles de Ilave, El Collao - Puno</h3>
             <p>Este mapa catastral muestra la distribución de tierras por calles en la zona de Ilave, en la provincia de El Collao, en Puno. Útil para identificar propiedades y límites territoriales por cada calle.</p>
-            <embed src="\pdf\3 PLANO.pdf" type="application/pdf" width="100%" height="800px">
+            <iframe src="\pdf\3 PLANO.pdf" width="100%" height="800px" ></iframe>
+			<div id="adobe-dc-view"></div>
+			<script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+			<script type="text/javascript">
+				document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+					var adobeDCView = new AdobeDC.View({clientId: "d86a668974054c3bb2865f574e5cf8ef", divId: "adobe-dc-view"});
+					adobeDCView.previewFile({
+						content:{location: {url: "https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
+						metaData:{fileName: "Bodea Brochure.pdf"}
+					}, {});
+				});
+			</script>
+
 
 		</div>
 	</div>
