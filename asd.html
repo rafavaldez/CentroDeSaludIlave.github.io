@@ -1,40 +1,35 @@
-
-
-<!DOCTYPE html>
 <html>
 <head>
-    <title>PDF.js Express Viewer</title>
-    <!-- Importa PDF.js Express Viewer como una etiqueta de script desde la carpeta lib utilizando una ruta relativa -->
-    <script src='/lib/webviewer.min.js'></script>
+  <title>Basic WebViewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
+
+<!-- Import WebViewer as a script tag -->
+<script src='WebViewer/lib/webviewer.min.js'></script>
+
 <body>
-    <div id='viewer' style="width: 1024px; height: 600px; margin: 0 auto;"></div>
-    <script>
-        WebViewer({
-            path: '/lib', // Ruta a la carpeta 'lib' de PDF.js Express en tu servidor
-            licenseKey: 'localhost',
-            initialDoc: '/pdf/PLANO CATASTRAL ILAVE EL COLLAO - PUNO-Model.pdf',
-            // initialDoc: '/path/to/my/file.pdf',  // También puedes usar documentos en tu servidor
-        }, document.getElementById('viewer'))
-        .then(instance => {
-            // Ahora puedes acceder a las API a través de la instancia de WebViewer
-            const { Core, UI } = instance;
-
-            // Agrega un event listener para cuando un documento se ha cargado
-            Core.documentViewer.addEventListener('documentLoaded', () => {
-                console.log('Documento cargado');
-            });
-
-            // Agrega un event listener para cuando el número de página ha cambiado
-            Core.documentViewer.addEventListener('pageNumberUpdated', (pageNumber) => {
-                console.log(`El número de página es: ${pageNumber}`);
-            });
-        });
-    </script>
+  <div id='viewer' style='width: 1024px; height: 600px; margin: 0 auto;'></div>
+  <script>
+    WebViewer({
+      path: 'WebViewer/lib', // path to the Apryse 'lib' folder on your server
+      licenseKey: 'demo:1713754688165:7feaa1fd030000000066a5dfcb210c33404f3c4c73aeefb8d9942c2c6a', // sign up to get a key at https://dev.apryse.com
+      initialDoc: 'https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf',
+      // initialDoc: '/path/to/my/file.pdf',  // You can also use documents on your server
+    }, document.getElementById('viewer'))
+    .then(instance => {
+      const { documentViewer, annotationManager } = instance.Core;
+  
+      // call methods from instance, documentViewer and annotationManager as needed
+  
+      // you can also access major namespaces from the instance as follows:
+      // const Tools = instance.Core.Tools;
+      // const Annotations = instance.Core.Annotations;
+  
+      documentViewer.addEventListener('documentLoaded', () => {
+        // call methods relating to the loaded document
+      });
+    });
+  </script>
 </body>
 </html>
-
-
-
-
 
