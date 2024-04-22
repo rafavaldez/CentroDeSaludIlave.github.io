@@ -63,7 +63,7 @@ $(document).ready(function() {
 
 
   /* Back top
-  -----------------------------------------------*/
+  -----------------------------------------------
     $(window).scroll(function() {
         if ($(this).scrollTop() > 200) {
         

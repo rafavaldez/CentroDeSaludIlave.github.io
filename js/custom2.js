@@ -3,7 +3,7 @@
   -----------------------------------------------*/
   $(window).load(function(){
     $('.preloader').fadeOut(1000); // set duration in brackets  
-    $('.go-top').fadeIn(0);  
+    
 });
 
 
@@ -51,7 +51,7 @@ $(document).ready(function() {
   /* Owl Carousel
   -----------------------------------------------*/
   $(document).ready(function() {
-    $('.go-top').fadeIn(0);
+    
     $("#owl-speakers").owlCarousel({
       autoPlay: 6000,
       items : 4,
@@ -65,10 +65,10 @@ $(document).ready(function() {
 
 
   /* Back top
-  -----------------------------------------------*/
+  -----------------------------------------------
     $(window).scroll(function() {
         if ($(this).scrollTop() > 0) {
-            $('.go-top').fadeIn(0);
+           // $('.go-top').fadeIn(0);
         } else {
           
         }
@@ -76,7 +76,7 @@ $(document).ready(function() {
         // Animate the scroll to top
         $('.go-top').click(function(event) {
             event.preventDefault();
-            window.location.href = 'https://www.youtube.com/watch?v=dsLjyLn859g&list=RDdsLjyLn859g&start_radio=1&ab_channel=chayanneVEVO'; // Cambia esta URL por la que desees
+            //window.location.href = 'https://www.youtube.com/watch?v=dsLjyLn859g&list=RDdsLjyLn859g&start_radio=1&ab_channel=chayanneVEVO'; // Cambia esta URL por la que desees
         });
         
 

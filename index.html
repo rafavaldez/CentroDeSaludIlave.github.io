@@ -83,7 +83,7 @@
                 <span class="icon icon-bar"></span>
                 <span class="icon icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <img src="images/minsa_.png" alt="Centro de Salud Ilave" class="img-responsive" style="max-height: 70px;">
             </a>
         </div>
@@ -92,7 +92,7 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.html" class="smoothScroll">Inicio</a></li>
-                <li><a href="map.html" class="smoothScroll">mapas</a></li>                
+                <li><a href="map.html" class="smoothScroll">Visita Domiciliaria Amigable(Mapas)</a></li>                
             </ul>
 
         </div>
@@ -395,12 +395,33 @@
 <!-- =========================
     OVERVIEW SECTION   
 ============================== -->
+<style>
+	#overview{
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    background-image: url('https://img.freepik.com/foto-gratis/muro-hormigon-gris_53876-88973.jpg?size=626&ext=jpg&ga=GA1.1.1488620777.1712102400&semt=ais') !important;
+    
+}
+
+</style>
+
+<style>
+    /* Define la fuente personalizada */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    /* Aplica la nueva fuente a los elementos h4 y p */
+    h4, p {
+        font-family: 'Roboto', sans-serif;
+		font-size: 16px; /* Tamaño de letra aumentado */
+      
+    }
+</style>
 <section id="overview" class="parallax-section">
 	<div class="container">
 		<div class="row">
 
 			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
-				<h4>Misión</h4>
+				<h4><center>Misión</center></h4>
 				<p>El centro de salud Metropolitano tiene la
 					misión de proteger la dignidad personal,
 					promoviendo la salud, previniendo las
@@ -412,7 +433,7 @@
 					concertación con todos los sectores
 					públicos y los actores sociales.</p>
 
-				<h4>Visión</h4>
+				<h4><center>Visión</center></h4>
 				<p>Lograr ser una institución que brinda
 					calidad de salud orientado a la salud plena,
 					física, mental y social como consecuencia
@@ -447,11 +468,11 @@
 			<div class="wow fadeInUp col-md-7 col-sm-7" data-wow-delay="0.6s">
 				<h2>Estamos aqui!!</h2>
 				<h3>Centro de Salud Metropolitano - Ilave Categoria I - 3</h3>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet consectetuer diam nonummy.</p>
+				<p>Ref. Estamos ubicados mas abajo de electroPeru.</p>
 			</div>
 
 			<div class="wow fadeInUp col-md-5 col-sm-5" data-wow-delay="1s">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.6591822132104!2d-69.64281701416678!3d-16.083166190404533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915da7a1a13e1ac3%3A0x6845f85123809bc6!2sCentro%20de%20Salud%20Meteopolitano%20Ilave!5e0!3m2!1ses-419!2spe!4v1713673960953!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d633.5181183610034!2d-69.63543514592406!3d-16.08893825378127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-16.089066872713214!2d-69.63515146438155!5e0!3m2!1ses-419!2spe!4v1713757418971!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 
 			<div class="col-md-1"></div>
@@ -502,7 +523,21 @@
 					<p>En nuestro compromiso con tu bienestar y el de tu familia, te invitamos a ponerte en contacto con nosotros. Nuestro equipo de profesionales médicos altamente capacitados está aquí para brindarte la atención que necesitas.</p>
 					<p>Ya sea que estés buscando información sobre nuestros servicios médicos, desees programar una consulta o tengas preguntas sobre tu salud, estamos aquí para ayudarte en cada paso del camino.</p>
 					<p>No esperes más para cuidar tu salud. ¡Contáctanos hoy mismo y déjanos ser tu aliado en el camino hacia una vida más saludable!</p>
-					<a href="https://www.youtube.com/tucanal" class="btn btn-danger" target="_blank">Háblanos en WhatsApp</a>
+					
+					
+					<script>
+						var links = [
+							"https://wa.me/+51921776569",
+							"https://wa.me/+51931189619"
+						];
+					
+						var randomIndex = Math.floor(Math.random() * links.length);
+					
+						var randomLink = links[randomIndex];
+					
+						document.write('<a href="' + randomLink + '" class="btn btn-danger" target="_blank">Háblanos en WhatsApp</a>');
+					</script>
+					
 
 				</div>
 			</div>
