@@ -262,7 +262,7 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('https://www.raulbarrero.com/wp-content/uploads/2017/12/raul-barrero-portada-hd-australia.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/tp1.png') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
